@@ -1,0 +1,113 @@
+{% extends "base.html.twig" %}
+
+{% block body1 %}
+    <div style="background-image:url({{ asset('bundles/resto/images/image_de_fond.png') }});">
+        <div class="container">
+            <br/>
+            <center>
+                <table>
+                    <tr>
+                        <td>
+                        </td>
+                        <td>
+                    <center>
+                        <h2 style="color:white;">BIENVENUE CHEZ</h2>
+                        <h1 style="color:white;">VALENTINO</h1>
+                    </center>
+                    </td>
+                    <td>
+                    </td>
+                    </tr>
+                    <tr>
+                        <td><img  class="d-block img-fluid" src="{{ asset('bundles/resto/images/map_flour2.png') }}"></td>
+                        <td>
+
+
+                            <div class="row">
+
+                                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+
+                                    <ol class="carousel-indicators" >
+                                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                                        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                                    </ol>
+
+                                    <div class="carousel-inner" role="listbox"  >
+                                        <div class="carousel-item active">
+                                            <img style ="border-radius: 10%;border: 1px solid #ddd;" class="d-block img-fluid" src="{{ asset('bundles/resto/images/slide01.png') }}" alt="First slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img style ="border-radius: 10%;border: 1px solid #ddd;" class="d-block img-fluid" src="{{ asset('bundles/resto/images/slide02.png') }}" alt="Second slide">
+                                        </div> 
+                                        <div class="carousel-item">
+                                            <img style ="border-radius: 10%;border: 1px solid #ddd;" class="d-block img-fluid" src="{{ asset('bundles/resto/images/slide01.png') }}" alt="Third slide">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img style ="border-radius: 10%;border: 1px solid #ddd;" class="d-block img-fluid" src="{{ asset('bundles/resto/images/slide03.png') }}" alt="Fourth slide">
+                                        </div>
+                                    </div>
+
+                                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </div>
+                        </td>
+                        <td><img  class="d-block img-fluid" src="{{ asset('bundles/resto/images/footer2.png') }}"></td>
+                    </tr>
+                </table>
+            </center>
+        </div><br/><br/><br/>
+    </div>
+
+{% endblock %}
+{% block body2 %}
+    <div class="container">
+        <div class="divider1"></div>
+        <br/>
+        <table width="100%">
+            <tr>
+                <td>
+                </td>
+                <td style="color:white">
+                    <br/>
+            <center>
+                <b>V</b>ous êtes à la recherche d’un service de 
+                livraison de <br/><b>Pizza</b>, <b>Sandwich</b>, <b>Tacos</b>... à domicile rapide et<br/>  
+                pas cher sur Casablanca ? Vous êtes  
+                au <b>bon endroit</b> au <b>bon moment</b> !<br/> 
+                <b>Valentino</b> est le premier service de<br/>
+                livraison de Pizza, Sandwich, Tacos et salade à<br/>
+                domicile de la région Casablancaise.<br/> 
+                Des produits <b>100% frais</b>, <b>100% sur commande</b> et entièrement réalisés <b>à la main</b>.<br/> 
+            </center>
+            </td>
+            <td>
+            </td>
+            </tr>
+            <tr>
+                <td><center><img  class="d-block img-fluid" src="{{ asset('bundles/resto/images/tablette-valentino.png') }}"></center></td>
+            <td><center><img  class="d-block img-fluid" src="{{ asset('bundles/resto/images/burger-eclate.png') }}"></center></td>
+            <td><center><img  class="d-block img-fluid" src="{{ asset('bundles/resto/images/camion-de-livraison.png') }}"></center></td>
+            </tr>
+            <tr style="color:orange">
+                <td>
+                    <b><center>1-Vous commandez</center></b>
+                </td>
+                <td>
+                    <b><center>2-On prépare</center></b> 
+                </td>
+                <td>
+                    <b><center>3-On vous livre</center></b>
+                </td>
+            </tr>
+        </table>
+        <div class="divider1"></div>
+    </div>
+{% endblock %}

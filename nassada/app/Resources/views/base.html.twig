@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>{% block title %}Welcome chez Valentino!{% endblock %}</title>
+        {% block stylesheets %}
+            <link rel="stylesheet" type="text/css" href="{{ asset('bundles/resto/css/bootstrap.css') }}">
+            <!-- Custom styles for this template -->
+            <link rel="stylesheet" type="text/css" href="{{ asset('bundles/resto/css/resto.css') }}">
+        {% endblock %}
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+    </head>
+    <body>
+        {% block menu %}
+            <!-- Navigation -->
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+                <div class="container">
+                    <a class="navbar-brand" href="#"><img class="d-block img-fluid" src="{{ asset('bundles/resto/images/valentino_lg.png') }}" alt="home"></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarResponsive">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Home
+                                    <span class="sr-only">(current)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#hamburgers">Hamburgers</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#pizzas">Pizzas</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#tacos">Tacos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#sandwiches">Sandwiches</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#salades">Salades</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#promotions">Bons Plans</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        {% endblock %}
+    {% block body0 %}{% endblock %}
+{% block body1 %}{% endblock %}
+{% block body2 %}{% endblock %}
+{% block body3 %}{% endblock %}
+{% block body4 %}{% endblock %}
+<br/>
+{% block contact %}
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="col-lg-6 col-md-6 mb-6">
+                gfutfuyfuoyguyguoyguyguy
+            </div>
+        </div>
+        <div class="col-lg-6">
+            <div class="col-lg-6 col-md-6 mb-6">
+                <img class="card-img-top" src="{{ asset('bundles/resto/images/google_map_bg2.png') }}" alt="">
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block footer %}
+    <footer class="py-5">
+        <div class="container">
+            <p class="m-0 text-center text-white">
+            <center>
+                <table>
+                    <tr>
+                        <td>
+                            <img class="d-block img-fluid" src="{{ asset('bundles/resto/images/Facebook-Logo.png') }}" alt="home">
+                        </td>
+                        <td>
+                            <img class="d-block img-fluid" src="{{ asset('bundles/resto/images/FR_Instagram.png') }}" alt="home">
+                        </td>
+                        <td>
+                            <img class="d-block img-fluid" src="{{ asset('bundles/resto/images/Twitter-logo.png') }}" alt="home">
+                        </td>
+                        <td>
+                            <img class="d-block img-fluid" src="{{ asset('bundles/resto/images/Youtube-Logo.png') }}" alt="home">
+                        </td>
+                    </tr>
+                    <tr style="color:white">
+                        <td colspan="4">Copyright &copy; Valentino 2018</td>
+                    </tr>
+                </table>
+            </center>
+        </div>
+        <!-- /.container -->
+    </footer>
+{% endblock %}
+{% block javascripts %}
+    <!-- Bootstrap core JavaScript -->
+    <script src="{{ asset('bundles/resto/js/jquery.min.js') }}"></script>
+    <script src="{{ asset('bundles/resto/js/bootstrap.bundle.min.js') }}"></script>
+{% endblock %}
+</body>
+</html>
